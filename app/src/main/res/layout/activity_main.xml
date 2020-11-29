@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penjumlahan 2 Bilangan"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Bilangan Kedua"
+                android:paddingTop="135dp"
+                android:textSize="15dp"
+                android:gravity="left"/>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="65dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/txtBil1"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Bilangan Pertama"
+                android:paddingTop="55dp"
+                android:textSize="15dp"
+                android:gravity="left"/>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="150dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/txtBil2"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="135dp"
+            android:text="HITUNG"
+            android:id="@+id/btnCekBil"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hasil Penjumlahan"
+                android:paddingTop="260dp"
+                android:textSize="15dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="270dp">
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:layout_marginLeft="58dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/hasil"/>
+        </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
